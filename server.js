@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var page =
+var pagearea =
 {
     pageone:
     {
@@ -60,9 +60,9 @@ function template(value)
 
 
 
-app.get('/:pageArea', function(req, res) {
-  var pageArea = req.paramas.pageArea;
-  res.send(template(page[pageArea]));
+app.get('/:pageitem', function(req, res) {
+  var pageitem = req.paramas.pageitem;
+  res.send(template(pagearea[pageitem]));
   //function(variable[object])
 });
 
