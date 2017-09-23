@@ -60,7 +60,7 @@ function template(value)
 
 
 
-app.get('/:page-Area', function(req, res) {
+app.get('/:pageArea', function(req, res) {
   var pageArea = req.paramas.pageArea;
   res.send(template(page[pageArea]));
   //function(variable[object])
