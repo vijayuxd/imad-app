@@ -1,2 +1,2 @@
 console.log('Loaded!');
-alert(pagecontent);
+//alert(pagecontent);
