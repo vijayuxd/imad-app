@@ -7,21 +7,21 @@ app.use(morgan('combined'));
 
 var articles =
 {
-    articleOne:
+    'articleOne':
     {
     name:`vijay`,
     age:`21`,
     fathername:`kannan`,
     linkpage:`/pagetwo`
     },
-    articleTwo:
+    'articleTwo':
     {
     name:`suhail`,
     age:`22`,
     fathername:`sahul`,
     linkpage:'/pagethree'
     },
-    articleThree:
+    'articleThree':
     {
     name:`vel`,
     age:`23`,
@@ -60,9 +60,11 @@ function template(value)
 
 
 
-app.get('/:pageitem', function(req, res) {
-  var pageitem = req.paramas.pageitem;
-  res.send(template(pagearea[pageitem]));
+app.get('/:articleName', function(req, res) {
+    //articleName = articl-one
+    //
+  var articleName = req.paramas.articleName;
+  res.send(template(articles[articleName]));
   //function(variable[object])
 });
 
