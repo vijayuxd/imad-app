@@ -62,7 +62,7 @@ function htmltemplate(data)
 
 app.get('/:articleName', function(req, res) {
     //articleName = articl-one
-    //
+    //articles[articleName] == {} content object for article one
   var articleName = req.paramas.articleName;
   res.send(htmltemplate(articles[articleName]));
   //function(variable[object])
