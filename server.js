@@ -30,7 +30,7 @@ var articles =
     }
 };
 
-function template(value)
+function htmltemplate(data)
 {
     var name=value.name,age=value.age,fathername=value.fathername;
     
@@ -64,7 +64,7 @@ app.get('/:articleName', function(req, res) {
     //articleName = articl-one
     //
   var articleName = req.paramas.articleName;
-  res.send(template(articles[articleName]));
+  res.send(htmltemplate(articles[articleName]));
   //function(variable[object])
 });
 
