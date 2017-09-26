@@ -12,14 +12,14 @@ var articles =
     name:`vijay`,
     age:`21`,
     fathername:`kannan`,
-    linkpage:`/pagetwo`
+    linkpage:`/article-two`
     },
     'articleTwo':
     {
     name:`suhail`,
     age:`22`,
     fathername:`sahul`,
-    linkpage:'/pagethree'
+    linkpage:'/article-three'
     },
     'articleThree':
     {
