@@ -5,23 +5,23 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var pagearea =
+var articles =
 {
-    pageone:
+    articleOne:
     {
     name:`vijay`,
     age:`21`,
     fathername:`kannan`,
     linkpage:`/pagetwo`
     },
-    pagetwo:
+    articleTwo:
     {
     name:`suhail`,
     age:`22`,
     fathername:`sahul`,
     linkpage:'/pagethree'
     },
-    pagethree:
+    articleThree:
     {
     name:`vel`,
     age:`23`,
