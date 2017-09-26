@@ -32,7 +32,7 @@ var articles =
 
 function htmltemplate(data)
 {
-    var name=value.name,age=value.age,fathername=value.fathername;
+    var name=data.name,age=data.age,fathername=data.fathername;
     
     var content=`
         <!doctype html>
