@@ -58,6 +58,9 @@ function htmltemplate(data)
     `;
 }
 
+app.get('/test-db',function(req,res){
+    
+});
 
 
 app.get('/:articleName', function(req, res) {
