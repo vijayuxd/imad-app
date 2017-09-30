@@ -72,7 +72,7 @@ function htmltemplate(data)
 
 var pool= new pool(config);
 
-app.get('/test-db',function(req,res){
+app.get('/test-db',function(req,res){ 
     //request
     //response
 pool.query('SELECT * FROM test',function(err,result){
